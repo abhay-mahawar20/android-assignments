@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context="com.example.assignment5.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Preference Application"
+        android:gravity="center"
+        style="@style/appBar"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Select Your Device :"
+       style="@style/txt"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/deviceRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            style="@style/txt"/>
+        <RadioButton
+            android:id="@+id/rbIOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IOS"
+            style="@style/txt"/>
+        <RadioButton
+            android:id="@+id/rbWindows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows"
+            style="@style/txt"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select App Features :"
+        style="@style/txt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/cbNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        style="@style/txt"/>
+
+    <CheckBox
+        android:id="@+id/cbDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        style="@style/txt"/>
+
+    <CheckBox
+        android:id="@+id/cbLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        style="@style/txt"/>
+
+    <CheckBox
+        android:id="@+id/cbCloudBackup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cloud Backup"
+        style="@style/txt"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+</LinearLayout>
